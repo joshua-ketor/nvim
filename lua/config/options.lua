@@ -69,3 +69,18 @@ local undodir_path = vim.fn.expand(undodir)
 if vim.fn.isdirectory(undodir_path) == 0 then
 	vim.fn.mkdir(undodir_path, "p") -- Create if not exists
 end
+
+-- Behaviour Settings
+vim.opt.errorbells = false -- Disable error sounds
+vim.opt.backspace = "indent,eol,start" -- Make backspace behave naturally
+vim.opt.autochdir = false -- Don't change directory automatically
+vim.opt.iskeyword:append("-") -- Treat dash as part of a word
+vim.opt.path:append("**") -- Search into subfolders with gf
+vim.opt.selection = "inclusive" -- Use inclusive selection
+vim.opt.mouse = "a" -- Enable mouse support
+vim.opt.clipboard:append("unnamedplus") -- Use system clipboard
+vim.opt.modifiable = true -- Allow editing buffers
+vim.opt.encoding - "UTF-8" -- Allow UTF-8 encoding
+vim.opt.wildmenu = true -- Enable command-line completion menu
+vim.opt.wildmode = "longest:full,full" -- Completion mode for command-line
+vim.opt.wildignorecase = true -- Case-insensitive tab completion in commands
