@@ -46,7 +46,7 @@ vim.opt.concealcursor = "" -- Show markup even on cursor line
 vim.opt.lazyredraw = false -- redraw while executing macros (butter UX)
 vim.opt.redrawtime = 10000 -- Timeout for syntax highlighting redraw
 vim.opt.maxmempattern = 20000 -- Max memory for pattern matching
-vim.opt.synmaxcol = 300 - Syntax highlighting column limit
+vim.opt.synmaxcol = 300 -- Syntax highlighting column limit
 
 -- File Handling
 vim.opt.backup = false -- Don't create backup files
