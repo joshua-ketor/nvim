@@ -94,3 +94,8 @@ vim.opt.guicursor = {
 	"a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor", -- All modes: blinking & highlighting groups
 	"sm:block-blinkwait175-blinkoff150-blinkon175", -- Showmatch mode
 }
+
+-- Folding Settings
+vim.opt.foldmethod = "expr" -- Use expression for folding
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()" -- Use treesitter for folding
+vim.opt.foldlevel = 99 -- Keep all folds open by default
